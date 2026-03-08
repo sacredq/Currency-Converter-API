@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Currency Convertation</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Currency Converter</h1>
+            <input id = "input-field" type = "number" placeholder = "0">
+            <div class = "Converter-info">
+                <div class = "info-el">
+                    <img id = "from-image" src = "" alt = "icon-country">
+                    <div class = "currency-box">
+                        <select id = "select-from-currency" class = "select-currency">
+                            <option value = "USD">USD</option>
+                            <option value = "EUR">EUR</option>
+                            <option value = "AED">AE</option>
+                            <option value = "UAH">UAH</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "convertation-icon">
+                    <i id = "reverse-btn" class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+
+                <div class = "info-el">
+                    <img id = "to-image" src = "" alt = "icon-country">
+                    <div class = "currency-box">
+                        <select id = "select-to-currency" class = "select-currency">
+                            <option value = "USD">USD</option>
+                            <option value = "EUR">EUR</option>
+                            <option value = "AED">AE</option>
+                            <option value = "UAH">UAH</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "res-field">
+                <p id = "res-text">0 USD = 0 EURO</p>
+            </div>
+
+            <div class = "convert-button">
+                <button id = "convertBtn">Convert</button>
+            </div>
+        </div>
+        <script src = "flagIcons.js"></script>
+        <script src = "main.js"></script>
+    </body>
+</html>
